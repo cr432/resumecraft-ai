@@ -2,4 +2,4 @@ fastapi
 uvicorn
 python-docx
 requests
-python-multipart 
+python-multipart python-dotenv
