@@ -2,7 +2,7 @@
 
 A professional resume tailoring application powered by Claude AI that helps users customize their resumes to match specific job descriptions.
 
-![ResumeCraft AI Screenshot](screenshot.png) <!-- Add a screenshot of your app here -->
+![ResumeCraft AI Screenshot](resumemaker.png)
 
 ## Features
 
@@ -13,12 +13,22 @@ A professional resume tailoring application powered by Claude AI that helps user
 - Download the customized resume in .docx format
 - Preserves original resume formatting and structure
 
+## How It Works
+
+1. **Upload Your Resume**: Submit your existing .docx resume
+2. **Add Job Description**: Paste the job posting you're applying for
+3. **AI Analysis**: Claude AI analyzes both documents to identify key requirements
+4. **Smart Tailoring**: Your resume is intelligently modified to emphasize relevant experience
+5. **Download Result**: Get a professionally tailored resume as a .docx file
+
 ## Technologies Used
 
-- **Backend**: Python with FastAPI
-- **Frontend**: HTML, CSS, JavaScript
-- **AI**: Claude API (Anthropic)
-- **Document Processing**: python-docx
+- **Backend**: Python with FastAPI for high-performance API
+- **Frontend**: HTML5, CSS3, JavaScript with modern UI components
+- **AI**: Claude API (Anthropic) for intelligent resume analysis
+- **Document Processing**: python-docx for .docx file handling
+- **Animation**: AOS library for smooth UI transitions
+- **UI Components**: Font Awesome icons, custom responsive design
 
 ## Installation
 
@@ -36,7 +46,7 @@ A professional resume tailoring application powered by Claude AI that helps user
    ```
 
 3. Set up environment variables:
-   Create a `.env` file in the project root and add your Claude API key:
+   Create a `.env` file in the project root with your Claude API key:
    ```
    CLAUDE_API_KEY=your_claude_api_key
    ```
@@ -71,6 +81,13 @@ Tailors a resume to match a job description.
 - 200: Returns the tailored resume as a .docx file
 - 400: Bad request (invalid file format)
 - 500: Server error
+
+## Project Structure
+
+- `app.py`: FastAPI backend with Claude API integration
+- `client.html`: Frontend UI with HTML, CSS, and JavaScript
+- `requirements.txt`: Python dependencies
+- `.env.example`: Example environment configuration
 
 ## License
 
